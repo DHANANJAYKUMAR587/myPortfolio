@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4a00e0, #8e2de2);
+            color: white;
+            text-align: center;
+            padding: 0;
+        }
+        .navbar {
+            background: yellow;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0;
+            background: white;
+            color: black;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+        }
+        h1 {
+            color: #ffeb3b;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 18px;
+            background: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+        .button::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: yellow;
+            transition: left 0.3s;
+            z-index: -1;
+        }
+        .button:hover::after {
+            left: 0;
+        }
+        .button:hover {
+            color: black;
+            box-shadow: 8px 8px 20px rgba(255, 255, 0, 0.8);
+            transform: scale(1.05);
+        }
+        .social-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 50%;
+            background: black;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .social-icons a:hover {
+            background: yellow;
+            color: black;
+        }
+        span{
+            color: rgb(10, 95, 95);
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <span>DHANANJAY</span>
+        <div>
+            <a href="portfolioProject.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Education</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="Contact Me.html">Contact</a>
+        </div>
+    </div>
+    <h1>About Me</h1>
+    <div class="container">
+        <p>Hi, I am Dhananjay, a passionate designer and developer dedicated to creating stunning digital experiences. I love working with modern technologies, designing beautiful user interfaces, and bringing innovative ideas to life. My expertise spans across web development, UI/UX design, and engineering solutions.</p>
+        <p>Currently, I am pursuing my first year in engineering, constantly learning and evolving to keep up with the latest trends and technologies. I aim to build projects that not only look great but also offer seamless user experiences.</p>
+        <p>When I'm not coding, I enjoy exploring new design inspirations, working on side projects, and staying updated with the latest in technology.</p>
+        <div class="button-container">
+            <a href="portfolioProject.html" class="button">Go to Home</a>
+            <a href="portfolioProject.html" class="button">Back</a>
+            <a href="Contact Me.html" class="button">Next</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://t.me/username" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </div>
+</body>
+</html>
+
+
